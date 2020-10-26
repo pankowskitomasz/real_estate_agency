@@ -1,0 +1,29 @@
+$backdrop__filter--privacy: blur(10px);
+$bg__blend--type: multiply;
+$bg__classes:
+    "error",
+    "comingsoon",
+    "privacy";
+$bg__comingsoon-img: "../img/estate.jpg";
+$bg__error-img: "../img/error.jpg";
+$bg__privacy-img: "../img/estate.jpg";
+$bg__aoa:
+    $bg__error-img,
+    $bg__comingsoon-img,
+    $bg__privacy-img;
+$body__min-height: 100%;
+$color__bg-1: #999;
+$color__dark: #2f2f2f;
+$color__transparent: transparent;
+$font-logo__family: 'Abril Fatface';
+$font-logo__size: 24px;
+$font-main__family: 'Open Sans';
+$font-main__size: 16px;
+$font-thin__weight: 300;
+$header__height: 74px;
+$section__min-height: 100vh;
+$text__shadow: 0 0 3px $color__dark;
+$theme-colors: (
+  "primary": #fff,
+  "secondary": #018580
+);
