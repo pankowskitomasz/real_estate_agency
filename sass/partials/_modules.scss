@@ -8,22 +8,46 @@
     @include background-blend($bg__blend--type, $color__bg-1);
     @include calc-param(min-height, $section__min-height, $header__height);
 }
-
+%bg-scroll-center{
+    background-attachment: scroll;
+    background-position: center;
+}
+.agents{
+    &-s1{
+        @extend %bg-scroll-center;
+    }
+}
+.bg{
+    &-gray{
+        background-color: $color__gray;
+    }
+}
+.buy{
+    &-s1{
+        @extend %bg-scroll-center;
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-scroll-center;
+        }
+    }
+}
 .comingsoon{
     &-s1{
         @extend %bg-blend;
     }
 }
-.error{
+.contact{
     &-s1{
-        @extend %bg-blend;
+        @extend %bg-scroll-center;
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-scroll-center;
+        }
     }
 }
-.privacy{
-    &-container{
-        background-color: $color__transparent !important;
-        backdrop-filter: $backdrop__filter--privacy;
-    }
+.error{
     &-s1{
         @extend %bg-blend;
     }
@@ -39,16 +63,91 @@
         font-weight: $font-thin__weight;
     }
 }
+.img{
+    &-fit{
+        &-top{
+            @include calc-param(height, $section__min-height, $header__height);
+            @include calc-param(max-height, $section__min-height, $header__height);
+            @include calc-param(min-height, $section__min-height, $header__height);
+            object-fit: cover;
+            mix-blend-mode: $bg__mix--multiply;
+            width:100%;
+        }
+    }
+}
+.index{
+    &-s1{
+        @extend %bg-blend;
+    }
+    &-s3{
+        @include background-blend($bg__blend--type, $color__gray);
+        @extend %bg-scroll-center;
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-scroll-center;
+        }
+    }
+}
+.minh{
+    &-25vh{
+        min-height: 25vh;
+    }
+    &-50vh{
+        min-height: 50vh;
+    }
+    &-75vh{
+        min-height: 75vh;
+    }
+    &-100vh{
+        min-height: 100vh;
+    }
+}
 .navbar{
+    &-nav{
+        & .nav-link{
+            &:hover{
+                filter: $nav-link__hover-filter;
+                text-decoration: underline;
+            }
+            color: $color__green;
+        }
+    }
     &-toggler{
         &-icon{
             background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgb(0 123 118)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
         }
     }
 }
-
+.privacy{
+    &-container{
+        background-color: $color__transparent !important;
+        backdrop-filter: $backdrop__filter--privacy;
+    }
+    &-s1{
+        @extend %bg-blend;
+    }
+}
+.rent{
+    &-s1{
+        @extend %bg-scroll-center;
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-scroll-center;
+        }
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;
     }
+}
+.user{
+    &-s1{
+        @extend %bg-blend;
+    }
+}
+textarea{
+    resize: none !important;
 }
