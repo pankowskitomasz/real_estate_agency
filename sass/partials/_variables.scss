@@ -1,19 +1,65 @@
 $backdrop__filter--privacy: blur(10px);
+$bg__agents-img:
+    "../img/contact_bg.jpg";
 $bg__blend--type: multiply;
+$bg__buy-img:
+    "../img/estate.jpg";
+$bg__buy-sub-img:
+    "../img/contact_bg.jpg";
 $bg__classes:
     "error",
     "comingsoon",
-    "privacy";
+    "privacy",
+    "index",
+    "index-sub",
+    "rent",
+    "rent-sub",
+    "buy",
+    "buy-sub",
+    "agents",
+    "contact",
+    "contact-sub",
+    "user";
 $bg__comingsoon-img: "../img/estate.jpg";
+$bg__contact-img:
+    "../img/estate.jpg";
+$bg__contact-sub-img:
+    "../img/contact_bg.jpg";
 $bg__error-img: "../img/error.jpg";
+$bg__index-img:
+    "",
+    "",
+    "../img/reviews_bg.jpg";
+$bg__index-sub-img:
+    "../img/contact_bg.jpg";
+$bg__mix--multiply: multiply;
 $bg__privacy-img: "../img/estate.jpg";
+$bg__rent-img:
+    "../img/estate.jpg";
+$bg__rent-sub-img:
+    "../img/contact_bg.jpg";
+$bg__user-img:
+    "../img/estate.jpg";
 $bg__aoa:
     $bg__error-img,
     $bg__comingsoon-img,
-    $bg__privacy-img;
+    $bg__privacy-img,
+    $bg__index-img,
+    $bg__index-sub-img,
+    $bg__rent-img,
+    $bg__rent-sub-img,
+    $bg__buy-img,
+    $bg__buy-sub-img,
+    $bg__agents-img,
+    $bg__contact-img,
+    $bg__contact-sub-img,
+    $bg__user-img;
 $body__min-height: 100%;
-$color__bg-1: #999;
+$color__bg-1: #aaa;
 $color__dark: #2f2f2f;
+$color__red: #e56647;
+$color__gray: #999;
+$color__green: #018580;
 $color__transparent: transparent;
 $font-logo__family: 'Abril Fatface';
 $font-logo__size: 24px;
@@ -21,9 +67,12 @@ $font-main__family: 'Open Sans';
 $font-main__size: 16px;
 $font-thin__weight: 300;
 $header__height: 74px;
+$nav-link__hover-filter: brightness(1.3);
 $section__min-height: 100vh;
 $text__shadow: 0 0 3px $color__dark;
 $theme-colors: (
-  "primary": #fff,
-  "secondary": #018580
+  "primary": $color__green,
+  "secondary": #fff,
+  "success": $color__green,
+  "danger": $color__red
 );

@@ -5,36 +5,344 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Real Estate Agency | Coming soon!</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>Real Estate Agency | Rent &amp; Buy Properties</title>
 </head>
 <body>
-    <header class="container-fluid px-0 shadow shadow-lg border-bottom border-secondary">
-        <nav class="navbar navbar-expand-md nabvar-dark bg-primary">
+    <header class="container-fluid px-0 shadow shadow-lg border-bottom border-primary">
+        <nav class="navbar navbar-expand-md nabvar-dark bg-secondary">
             <a href="index.html" class="navbar-brand">
                 <img src="img/navbar_logo.png" alt="logo"/>
-                <span class="navbar-text font-logo text-secondary">
+                <span class="navbar-text font-logo text-primary d-none d-sm-inline">
                     Real Estate Agency
                 </span>
             </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ml-auto text-uppercase font-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rent.html" class="nav-link">Rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="buy.html" class="nav-link">Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="agents.html" class="nav-link">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="comingsoon-s1 align-items-center d-flex text-shadow">
-            <div class="row justify-content-center mx-0 w-100">
-                <div class="col-10 col-sm-6 text-center text-primary">
-                    <h1 class=" display-4 font-logo">Coming soon :)</h1>
-                    <p class="lead">
-                        Hi, we are not ready yet, however we are staring soon.<br> 
-                        Please visit us again in a while.
+        <section class="index-s1 container-fluid bg-gray px-0">
+            <div class="row w-100 mx-0">
+                <div class="col-12 px-0">
+                    <div class="carousel slide" data-ride="carousel" id="index-s1-crs">
+                        <ol class="carousel-indicators">
+                            <li data-target="#index-s1-crs" data-slide-to="0" class="active"></li>
+                            <li data-target="#index-s1-crs" data-slide-to="1"></li>
+                            <li data-target="#index-s1-crs" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item bg-gray active">
+                                <img src="img/index/slide-1.jpg" alt="slide" class="img-fit-top">
+                                <div class="carousel-caption">
+                                    <h1 class="display-4 mb-3">Rent a property</h1>
+                                    <a href="rent.html" class="btn btn-lg btn-outline-secondary">
+                                        Go now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-gray">
+                                <img src="img/index/slide-2.jpg" alt="slide" class="img-fit-top">
+                                <div class="carousel-caption">
+                                    <h1 class="display-4 mb-3">Buy a property</h1>
+                                    <a href="buy.html" class="btn btn-lg btn-outline-secondary">
+                                        Go now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-gray">
+                                <img src="img/index/slide-3.jpg" alt="slide" class="img-fit-top">
+                                <div class="carousel-caption">
+                                    <h1 class="display-4 mb-3">Contact with agent</h1>
+                                    <a href="agents.html" class="btn btn-lg btn-outline-secondary">
+                                        Go now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#index-s1-crs" data-slide="prev" class="carousel-control-prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#index-s1-crs" data-slide="next" class="carousel-control-next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-s2 container px-0 py-5 d-flex align-items-center minh-50vh">
+            <div class="row mx-0 px-5 w-100">
+                <div class="col-12 px-0 border-bottom mb-3">
+                    <p class="lead mb-1 text-muted">
+                        Most viewed places
                     </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mt-4">
+                    <div class="card border shadow h-100">
+                        <img src="img/apartments/apartment-1.jpg" class="card-img-top" alt="apartment">
+                        <div class="card-body">
+                            <p class="text-primary text-left font-weight-bold mb-1">
+                                $ 1 100 / 10 days
+                            </p>
+                            <div class="w-100 text-white mb-2">
+                                <span class="badge bg-danger">Rent</span>
+                            </div>
+                            <p class="small text-muted mb-0">
+                                Bellstein Apartments, Silver Street 24, 5th Floor, New York
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white text-muted">
+                            <div class="float-left">
+                                <span class="fa fa-bed mr-1 text-primary"></span>
+                                4
+                            </div>
+                            <div class="float-right">
+                                <span class="fa fa-cube mr-1 text-primary"></span>
+                                2 800 Sqft
+                            </div>                            
+                        </div>
+                        <a href="rent.html?offerid=1" class="stretched-link"></a>
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-6 col-lg-4 mt-4">
+                    <div class="card border shadow h-100">
+                        <img src="img/apartments/apartment-2.jpg" class="card-img-top" alt="apartment">
+                        <div class="card-body">
+                            <p class="text-primary text-left font-weight-bold mb-1">
+                                $ 1 400 / 10 days
+                            </p>
+                            <div class="w-100 text-white mb-2">
+                                <span class="badge bg-danger">Rent</span>
+                            </div>
+                            <p class="small text-muted mb-0">
+                                Samarin 7, Silver Street 20, 2th Floor, New York
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white text-muted">
+                            <div class="float-left">
+                                <span class="fa fa-bed mr-1 text-primary"></span>
+                                4
+                            </div>
+                            <div class="float-right">
+                                <span class="fa fa-cube mr-1 text-primary"></span>
+                                4 500 Sqft
+                            </div>                            
+                        </div>
+                        <a href="rent.html?offerid=2" class="stretched-link"></a>
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-6 col-lg-4 mt-4">
+                    <div class="card border shadow h-100">
+                        <img src="img/houses/house-1.jpg" class="card-img-top" alt="house">
+                        <div class="card-body">
+                            <p class="text-primary text-left font-weight-bold mb-1">
+                                $ 450 000
+                            </p>
+                            <div class="w-100 text-white mb-2">
+                                <span class="badge bg-success">Buy</span>
+                            </div>
+                            <p class="small text-muted mb-0">
+                                Bell Hills, Goldman Street 24, Bell Hills
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white text-muted">
+                            <div class="float-left">
+                                <span class="fa fa-bed mr-1 text-primary"></span>
+                                6
+                            </div>
+                            <div class="float-right">
+                                <span class="fa fa-cube mr-1 text-primary"></span>
+                                15 000 Sqft
+                            </div>                            
+                        </div>
+                        <a href="buy.html?offerid=1" class="stretched-link"></a>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="index-s3 container-fluid px-3 py-5 d-flex align-items-center minh-50vh">
+            <div class="row mx-0 w-100">
+                <div class="col-12 px-0">
+                    <div class="carousel slide" data-ride="car ousel" id="index-s3-crs">
+                        <div class="carousel-inner minh-50vh d-flex align-items-center px-5">
+                            <div class="carousel-item active">
+                                <div class="text-white text-center">
+                                    <p class="mb-3 font-italic">
+                                        I have worked with these agents for a a few years now 
+                                        as a professional landlord on both the lettings and sales side, 
+                                        they are excellent at their job and i always recommend them to 
+                                        other landlords and friends selling properties
+                                    </p>
+                                    <p class="lead font-weight-bold mb-0">
+                                        Mike Handerson 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="text-white text-center">
+                                    <p class="mb-3 font-italic">
+                                        Great customer service, Richard and his team done an excellent 
+                                        job of achieving the sale of our property
+                                    </p>
+                                    <p class="lead font-weight-bold">
+                                        Debra Marks
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="text-white text-center">
+                                    <p class="mb-3 font-italic">
+                                        Since putting our house sale in the hands of these Estate Agents 
+                                        we have felt happy and at ease. They have always kept us informed 
+                                        and been professional and courteous in all his communications. 
+                                        It's been a pleasure to deal with them.
+                                    </p>
+                                    <p class="lead font-weight-bold mb-0">
+                                        Julianne Greegs
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#index-s3-crs" data-slide="prev" class="carousel-control-prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#index-s3-crs" data-slide="next" class="carousel-control-next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-s4 container px-0 py-5 d-flex align-items-center minh-50vh">
+            <div class="row mx-0 px-5 w-100">
+                <div class="col-12 px-0 border-bottom mb-3">
+                    <p class="lead mb-1 text-muted">
+                        Our Team
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mt-4">
+                    <div class="card border shadow h-100">
+                        <img src="img/agents/max_russel.jpg" class="card-img-top" alt="house">
+                        <div class="card-body">
+                            <p class="text-primary text-left font-weight-bold mb-1">
+                                Max Russel
+                            </p>
+                            <p class="initialism">
+                                Marketing Officer
+                            </p>
+                            <p class="small text-muted mb-0">
+                                <span class="fa fa-phone"></span>
+                                +(01) 877-2030-456
+                            </p>
+                        </div>
+                        <a href="agents.html#max-russel" class="stretched-link"></a>
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-6 col-lg-4 mt-4">
+                    <div class="card border shadow h-100">
+                        <img src="img/agents/anne_gibbs.jpg" class="card-img-top" alt="house">
+                        <div class="card-body">
+                            <p class="text-primary text-left font-weight-bold mb-1">
+                                Anne Gibbs
+                            </p>
+                            <p class="initialism">
+                                Sales Executive
+                            </p>
+                            <p class="small text-muted mb-0">
+                                <span class="fa fa-phone"></span>
+                                +(01) 877-3450-126
+                            </p>
+                        </div>
+                    </div>
+                    <a href="agents.html#anne-gibbs" class="stretched-link"></a>
+                </div> 
+                <div class="col-12 col-sm-6 col-lg-4 mt-4">
+                    <div class="card border shadow h-100">
+                        <img src="img/agents/mark_noel.jpg" class="card-img-top" alt="house">
+                        <div class="card-body">
+                            <p class="text-primary text-left font-weight-bold mb-1">
+                                Mark Noel
+                            </p>
+                            <p class="initialism">
+                                Financial examiner
+                            </p>
+                            <p class="small text-muted mb-0">
+                                <span class="fa fa-phone"></span>
+                                +(01) 877-3880-196
+                            </p>
+                        </div>
+                        <a href="agents.html#mark-noel" class="stretched-link"></a>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="index-s5 container-fluid p-0 minh-50vh bg-light border-top border-primary">
+            <div class="row mx-0 p-0 w-100">
+                <div class="col-12 col-md-6 index-sub-s1 order-2 order-md-1 minh-50vh p-0"></div>
+                <div class="col-12 col-md-6 order-1 order-md-2 p-5 d-flex align-items-center">
+                    <div class="w-100">
+                        <h4 class="text-primary text-center">Contact us</h4>
+                        <form autocomplete="off">
+                            <label class="mt-3 text-primary">Full Name</label>
+                            <input type="text" 
+                                class="form-control border-primary rounded-0 bg-transparent"
+                                maxlength="100"
+                                name="fname">                        
+                            <label class="mt-3 text-primary">Email</label>
+                            <input type="email" 
+                                class="form-control border-primary rounded-0 bg-transparent"
+                                maxlength="100"
+                                name="fmail">                    
+                            <label class="mt-3 text-primary">Phone</label>
+                            <input type="tel" 
+                                class="form-control border-primary rounded-0 bg-transparent"
+                                maxlength="14"
+                                name="fmail">               
+                            <label class="mt-3 text-primary">Message</label>
+                            <textarea class="form-control border-primary rounded-0 bg-transparent"
+                                maxlength="150"
+                                name="fmsg"></textarea>
+                            <div class="w-100 text-right mt-3">
+                                <input type="reset"
+                                    class="btn btn-primary"
+                                    value="clear">
+                                <input type="submit"
+                                    class="btn btn-primary"
+                                    value="Send">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container-fluid bg-primary font-weight-bold text-center text-secondary p-3 border-top border-secondary">
+    <footer class="container-fluid bg-secondary font-weight-bold text-center text-primary p-3 border-top border-primary">
         <small class="my-0">
             Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
-            <a class="text-secondary" href="privacy.html">Privacy policy</a>
+            <a class="text-primary" href="privacy.html">Privacy policy</a>
         </small>
     </footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
