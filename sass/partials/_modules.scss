@@ -151,3 +151,21 @@
 textarea{
     resize: none !important;
 }
+.w{
+    &-40{
+        width: 40px !important;
+    }
+}
+@media all and (min-width: 767px){
+    .img{
+        &-fit{
+            &-top{
+                max-height: 500px;
+                min-height: 50vh;
+                mix-blend-mode: $bg__blend--type;
+                object-fit: cover;
+                width: 100%;        
+            }
+        }
+    }
+}

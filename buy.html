@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <title>Real Estate Agency | Buy property</title>
 </head>
@@ -45,7 +45,7 @@
         </nav>
     </header>
     <main>
-        <section class="buy-s1 container-fluid bg-gray px-0 py-5 minh-50vh d-flex align-items-end border-bottom border-primary">
+        <section class="buy-s1 container-fluid bg-gray px-0 py-5 minh-50vh d-flex align-items-center border-bottom border-primary">
             <div class="row w-100 mx-0">
                 <div class="col-10 col-sm-8 col-md-5 col-xl-4 mx-auto">
                     <div class="card border border-primary shadow">
@@ -83,12 +83,39 @@
                     <p class="lead mb-1 text-muted">
                         Properties to buy:
                     </p>
-                </div>                
+                </div>   
+                <div class="col-12 col-sm-6 col-lg-4 mt-4">
+                    <div class="card border shadow h-100">
+                        <img src="img/apartments/apartment-1.jpg" class="card-img-top" alt="apartment">
+                        <div class="card-body">
+                            <p class="text-primary text-left font-weight-bold mb-1">
+                                $ 1 100 000
+                            </p>
+                            <div class="w-100 text-white mb-2">
+                                <span class="badge bg-danger">Buy</span>
+                            </div>
+                            <p class="small text-muted mb-0">
+                                Bellstein Apartments, Silver Street 24, 5th Floor, New York
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white text-muted">
+                            <div class="float-left">
+                                <span class="fa fa-bed mr-1 text-primary"></span>
+                                4
+                            </div>
+                            <div class="float-right">
+                                <span class="fa fa-cube mr-1 text-primary"></span>
+                                2 800 Sqft
+                            </div>                            
+                        </div>
+                        <a href="rent.html?offerid=1" class="stretched-link"></a>
+                    </div>
+                </div> 
             </div>
         </section>
-        <section class="buy-s3 container-fluid p-0 minh-50vh bg-light border-top border-primary">
+        <section class="buy-s3 container-fluid p-0 minh-25vh bg-light border-top border-primary">
             <div class="row mx-0 p-0 w-100">
-                <div class="col-12 col-md-6 buy-sub-s1 order-2 order-md-1 minh-50vh p-0"></div>
+                <div class="col-12 col-md-6 buy-sub-s1 order-2 order-md-1 minh-25vh p-0"></div>
                 <div class="col-12 col-md-6 order-1 order-md-2 p-5 d-flex align-items-center">
                     <div class="w-100">
                         <h4 class="text-primary text-center">Contact us</h4>
@@ -128,11 +155,10 @@
     </main>
     <footer class="container-fluid bg-secondary font-weight-bold text-center text-primary p-3 border-top border-primary">
         <small class="my-0">
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+            Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
             <a class="text-primary" href="privacy.html">Privacy policy</a>
         </small>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
